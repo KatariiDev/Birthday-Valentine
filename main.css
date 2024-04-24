@@ -18,6 +18,18 @@ html, body {
     overflow: hidden;
 }
 
+.footer {
+    height: 30px;
+    width: 110px;
+    border-radius:10px;
+    border: 2px solid gray;
+    text-align: center;
+    margin: 20px 0 0 20px;
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
 .paperHeart {
     position: absolute;
     height: 100px;

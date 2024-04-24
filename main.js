@@ -1,6 +1,6 @@
 // Nội dung thiệp
 var letterContent = 
-"Đây là nội dung của bức thư mà người ấy sẽ đọc được. Hãy viết gì đó cho người đó thôi nào. Cảm ơn bạn đã xem"
+"CHÚC MỪNG SINH NHẬT"
 
 // Typing Speed (Khuyến khích value:75) - (value càng GIẢM speed càng CAO)
 durationWrite = 40 
