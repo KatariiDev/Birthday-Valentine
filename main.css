@@ -18,7 +18,7 @@ html, body {
     overflow: hidden;
 }
 
-.footer {
+.mainCopyright {
     height: 30px;
     width: 110px;
     border-radius:10px;
@@ -28,6 +28,16 @@ html, body {
     padding-top: 5px;
     font-size: 15px;
     font-weight: 700;
+    color: black;
+}
+
+.mainCopyright>a.copyright {
+    text-decoration: none;
+}
+
+.mainCopyright:hover {
+    background-color: aquamarine;
+    color: black;
 }
 
 .paperHeart {
@@ -323,7 +333,7 @@ html, body {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    font-family: "Rubik Glitch Pop", system-ui;
+    font-family: "Pacifico", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
@@ -542,6 +552,12 @@ html, body {
     font-style: normal;
 }
 
+.pageNext1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .cardValentine.active.open {
     top: 50%;
     left: 50%;
@@ -622,4 +638,74 @@ html, body {
     100% {
         top: 50%;
     }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modal-container {
+    background-color: #ffff;
+    border: 2px solid none;
+    border-radius: 15px;
+    /*padding: 20px 20px 20px 20px;*/
+    font-family: "Pacifico";
+}
+
+.modal-name {
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    background-color: gray;
+}
+
+.modal-body {
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.modal-icons {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.modal-button {
+    padding: 20px 20px 20px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.modal-button-main {
+    background-color: gray;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 40px 20px 40px;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.modal-button-main:hover {
+    color: white !important;
+    border-radius: 50px;
+    background-color: green !important;
+    transition: all 0.3s ease 0s;
 }

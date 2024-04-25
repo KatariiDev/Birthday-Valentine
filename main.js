@@ -1,12 +1,15 @@
 // Nội dung thiệp
 var letterContent = 
-"CHÚC MỪNG SINH NHẬT"
+"Chúc mừng sinh nhật"
+
+var pageNext1 =
+"Đến trang tiếp theo"
 
 // Typing Speed (Khuyến khích value:75) - (value càng GIẢM speed càng CAO)
 durationWrite = 40 
 
-// Hiệu ứng gõ chữ
 
+// Hiệu ứng gõ chữ
 function effectWrite () {
     var boxLetter = document.querySelector(".letterContent")
     letterContentSplited = letterContent.split("")
@@ -14,6 +17,17 @@ function effectWrite () {
     letterContentSplited.forEach((val, index) => {
         setTimeout(() => {
             boxLetter.innerHTML += val    
+        }, durationWrite* index)
+    })
+}
+
+function effectWrite1 () {
+    var boxPage = document.querySelector(".pageNext1")
+    pageNext1Splited = pageNext1.split("")
+    
+    pageNext1Splited.forEach((val, index) => {
+        setTimeout(() => {
+            boxPage.innerHTML += val    
         }, durationWrite* index)
     })
 }
