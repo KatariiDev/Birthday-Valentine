@@ -1,9 +1,9 @@
 // Nội dung thiệp
 var letterContent = 
-"Chúc mừng sinh nhật"
+"Type anything....."
 
-var pageNext1 =
-"Đến trang tiếp theo"
+// var pageNext1 =
+// "Đến trang tiếp theo"
 
 // Typing Speed (Khuyến khích value:75) - (value càng GIẢM speed càng CAO)
 durationWrite = 40 
@@ -21,16 +21,16 @@ function effectWrite () {
     })
 }
 
-function effectWrite1 () {
-    var boxPage = document.querySelector(".pageNext1")
-    pageNext1Splited = pageNext1.split("")
+// function effectWrite1 () {
+//     var boxPage = document.querySelector(".pageNext1")
+//     pageNext1Splited = pageNext1.split("")
     
-    pageNext1Splited.forEach((val, index) => {
-        setTimeout(() => {
-            boxPage.innerHTML += val    
-        }, durationWrite* index)
-    })
-}
+//     pageNext1Splited.forEach((val, index) => {
+//         setTimeout(() => {
+//             boxPage.innerHTML += val    
+//         }, durationWrite* index)
+//     })
+// }
 
 window.addEventListener("load", () => {
     setTimeout(() => {

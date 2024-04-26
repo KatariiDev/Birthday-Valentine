@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(purple, pink);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+}
+
+.modal-container {
+    background-color: #ffff;
+    border: 2px solid none;
+    border-radius: 15px;
+    /*padding: 20px 20px 20px 20px;*/
+    font-family: "Pacifico";
+}
+
+.modal-name {
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+}
+
+.modal-body {
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.modal-icons {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.modal-button {
+    padding: 20px 20px 20px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.modal-button-main {
+    background-color: gray;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 40px 20px 40px;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.modal-button-main:hover {
+    color: white !important;
+    border-radius: 50px;
+    background-color: green !important;
+    transition: all 0.3s ease 0s;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
