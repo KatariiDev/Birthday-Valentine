@@ -1,6 +1,7 @@
 // Nội dung thiệp
-var letterContent = 
-"Type anything....."
+var letterContent =
+"Type anything.....\n\
+Yea anymore"
 
 // var pageNext1 =
 // "Đến trang tiếp theo"
