@@ -1,7 +1,5 @@
 // Nội dung thiệp
-var letterContent =
-"Type anything.....\n\
-Yea anymore"
+var letterContent ='Cũng đã đến ngày cô ấy "già" hơn tui 1 tuổi ^^ .Hôm nay là một ngày đặc biệt, ngày hạnh phúc của em!. Cảm ơn em đã đến bên anh, tin tưởng và sát cánh bên anh. Có em, anh thấy cuộc đời mình trở nên tươi sáng và đầy ý nghĩa hơn. Em tựa như chiếc cầu vồng chiếu sáng, sưởi ấm tâm hồn anh. Cảm ơn em mang cho anh những ngày tháng hạnh phúc nhất!. Chúc mừng sinh nhật em, cô công chúa anh yêu thương nhất!!!. '
 
 // var pageNext1 =
 // "Đến trang tiếp theo"
@@ -21,17 +19,6 @@ function effectWrite () {
         }, durationWrite* index)
     })
 }
-
-// function effectWrite1 () {
-//     var boxPage = document.querySelector(".pageNext1")
-//     pageNext1Splited = pageNext1.split("")
-    
-//     pageNext1Splited.forEach((val, index) => {
-//         setTimeout(() => {
-//             boxPage.innerHTML += val    
-//         }, durationWrite* index)
-//     })
-// }
 
 window.addEventListener("load", () => {
     setTimeout(() => {
