@@ -729,7 +729,7 @@ html, body {
     transition: all 0.3s ease 0s;
 }
 
-@media (max-width: 750px) and (max-height: 1550px) {
+@media (max-width: 800px) and (max-height: 1600px) {
     .container {
         position: relative;
         height: 100%;
@@ -752,3 +752,107 @@ html, body {
         animation: animateCard 2s ease-in-out forwards;
     }
 }
+
+@media (min-width: 1400px) and (min-height: 2500px) {
+    .container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-image: url(./img/rainbow-bgr1.jpg);
+        background-repeat: no-repeat;
+        background-size: 390%;
+        overflow: hidden;
+    }
+    .cardValentine.active {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        height: 800px;
+        width: 1000px;
+        background-color: transparent;
+        transition: 5;
+        animation: animateCard 2s ease-in-out forwards;
+    }
+    .boxTitle {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: "Rubik Glitch Pop", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 280px;
+        color: #AC496D;
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-shadow: 0 0 20px white;
+        animation: appearTitle 2s linear 3.1s forwards, floatingWords 4s ease-in-out infinite;
+    }
+    .boxCloud {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 555px;
+        width: 100%;
+        background-color: transparent;
+    }
+    .container.active .cloud {
+        position: absolute;
+        top: 0;
+        left: -50px;
+        height: 400px;
+        width: 200px;
+        background-color: #ffb3c1;
+        border-radius: 50%;
+        box-shadow: 120px -20px #ffb3c1, 240px -40px #ffb3c1, 360px -20px #ffb3c1, 480px 0px #ffb3c1, 600px -10px #ffb3c1, 720px 10px #ffb3c1, 840px 20px #ffb3c1, 960px 0px #ffb3c1, 1080px 40px #ffb3c1, 1200px 20px #ffb3c1, 1320px 0px #ffb3c1, 1440px -20px #ffb3c1;
+        transition: .8s;
+        transition-delay: 2.2s;
+        animation: animateCloud 3s ease-in-out 1s infinite;
+    }
+    .container.active .cloud1 {
+        position: absolute;
+        top: 75px;
+        left: -50px;
+        content: "";
+        height: 400px;
+        width: 200px;
+        background-color: #ffccd5;
+        border-radius: 50%;
+        box-shadow: 120px -20px #ffccd5, 240px -40px #ffccd5, 360px -20px #ffccd5, 480px 0px #ffccd5, 600px -10px #ffccd5, 720px 10px #ffccd5, 840px 20px #ffccd5, 960px 0px #ffccd5, 1080px 40px #ffccd5, 1200px 20px #ffccd5, 1320px 0px #ffccd5, 1440px -20px #ffccd5, 1560px 0px #ffccd5;
+        transition: .8s;
+        transition-delay: 1.3s;
+        animation: animateClou1 3s ease-in-out 1.5s infinite;
+    }
+    .container.active .cloud2 {
+        position: absolute;
+        top: 150px;
+        left: -50px;
+        content: "";
+        height: 480px;
+        width: 200px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 120px -20px white, 240px -20px white, 360px -20px white, 480px 0px white, 600px -10px white, 720px 10px white, 840px 20px white, 960px 0px white, 1080px 40px white, 1200px 20px white, 1320px 0px white, 1440px -20px white, 1560px 0px white;
+        transition: .8s;
+        transition-delay: .5s;
+        animation: animateCloud2 3s ease-in-out 2s infinite;
+    }
+    .cloudBtn::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 80px;
+        width: 85px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 60px 0 white, 120px 0 white, 180px 0 white, 240px 0 white, 300px 0 white, 300px 60px white, 240px 60px white, 180px 60px white, 120px 60px white, 60px 60px white, 0 60px white;
+    }
+} 
